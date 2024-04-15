@@ -12,9 +12,47 @@ function Home() {
    leftBtnText= "custom order"
    rightBtnText ="Exixting inventory"
    />
-   {/* <Section/>
-   <Section/>
-   <Section/> */}
+   <Section
+   title ="Model  X"
+   description ="order online for touchless Delivery"
+   backgroundImg ="model-x.jpg"
+   leftBtnText= "custom order"
+   rightBtnText ="Exixting inventory"
+   />
+   <Section
+   title ="Model  Y"
+   description ="order online for touchless Delivery"
+   backgroundImg ="model-y.jpg"
+   leftBtnText= "custom order"
+   rightBtnText ="Exixting inventory"
+   />
+   <Section
+   title ="Model  3"
+   description ="order online for touchless Delivery"
+   backgroundImg ="model-3.jpg"
+   leftBtnText= "custom order"
+   rightBtnText ="Exixting inventory"
+   />
+   <Section
+   title ="Lowest cost solar panels in America"
+   description ="Money-back guarantee"
+   backgroundImg ="solar-panel.jpg"
+   leftBtnText= "Order Now"
+   rightBtnText = "Learn more"
+   />
+   <Section
+   title ="Solar for New Roofs"
+   description ="solar Roof costs Less Than a New Roof Plus Solar Panels"
+   backgroundImg ="solar-roof.jpg"
+   leftBtnText= "Order Now"
+   rightBtnText ="Learn more"
+   />
+   <Section
+   title ="Accessories"
+   description =""
+   backgroundImg ="accessories.jpg"
+   leftBtnText= "Shop Now" 
+   />
    </Container>
   )
 }

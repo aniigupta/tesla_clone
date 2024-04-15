@@ -1,26 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-function Section({title,description,leftBtnText,rightBtnText}) {
-
+function Section({ title, description, leftBtnText, rightBtnText, backgroundImg }) {
   return (
-    <Wrap>
+    <Wrap style={{ backgroundImage: `url(/images/${backgroundImg})` }}>
       <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
       </ItemText>
       <Buttons>
-      <ButtonGroup>
-        <LeftButton>
-          {leftBtnText}
-        </LeftButton>
-        <RightButton>
-          {rightBtnText}
-        </RightButton>
-      </ButtonGroup>
+        <ButtonGroup>
+          <LeftButton>{leftBtnText}</LeftButton>
+          {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
+        </ButtonGroup>
       </Buttons>
-      <DownArrow src="/images/down-arrow.svg"/>
+      <DownArrow src="/images/down-arrow.svg" />
     </Wrap>
   );
 }
@@ -37,7 +31,6 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: url('/images/model-s.jpg');
 `;
 
 const ItemText = styled.div`
@@ -50,10 +43,10 @@ const ButtonGroup = styled.div`
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-margin-bottom:30px;
-@media (max-width:768px){
-    flex-direction:column;
-}
+  margin-bottom: 30px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const LeftButton = styled.div`
@@ -79,11 +72,9 @@ const RightButton = styled(LeftButton)`
 `;
 
 const DownArrow = styled.img`
-height:40px;
-overflow-x:hidden;
-animation: animateDown infinite 1.5s;
+  height: 40px;
+  overflow-x: hidden;
+  animation: animateDown infinite 1.5s;
 `;
 
-const Buttons = styled.div`
-
-`
+const Buttons = styled.div``;
