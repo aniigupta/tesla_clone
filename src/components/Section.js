@@ -1,20 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Section() {
+function Section({title,description,leftBtnText,rightBtnText}) {
+  console.log(prop); 
   return (
     <Wrap>
       <ItemText>
-        <h1>Model S1</h1>
-        <p>Order online for Touchless Delivery</p>
+        <h1>{props.title}</h1>
+        <p>{props.description}</p>
       </ItemText>
       <Buttons>
       <ButtonGroup>
         <LeftButton>
-          Custom order
+          {leftBtnText}
         </LeftButton>
         <RightButton>
-          Existing Inventory
+          {rightBtnText}
         </RightButton>
       </ButtonGroup>
       </Buttons>

@@ -5,10 +5,16 @@ import Section from './Section'
 function Home() {
   return (
    <Container>
+   <Section
+   title ="Model  S"
+   description ="order online for touchless Delivery"
+   backgroundImg ="model-s.jpg"
+   leftBtnText= "custom order"
+   rightBtnText ="Exixting inventory"
+   />
+   {/* <Section/>
    <Section/>
-   <Section/>
-   <Section/>
-   <Section/>
+   <Section/> */}
    </Container>
   )
 }
