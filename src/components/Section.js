@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 function Section({title,description,leftBtnText,rightBtnText}) {
-  console.log(prop); 
+
   return (
     <Wrap>
       <ItemText>
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </ItemText>
       <Buttons>
       <ButtonGroup>
