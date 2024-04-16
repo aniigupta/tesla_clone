@@ -1,18 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
+
 
 function Section({ title, description, leftBtnText, rightBtnText, backgroundImg }) {
   return (
     <Wrap style={{ backgroundImage: `url(/images/${backgroundImg})` }}>
-      <ItemText>
+      <Fade bottom>
+        <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
       </ItemText>
+      </Fade>
       <Buttons>
+      <Fade bottom>
         <ButtonGroup>
           <LeftButton>{leftBtnText}</LeftButton>
           {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
         </ButtonGroup>
+        </Fade>
       </Buttons>
       <DownArrow src="/images/down-arrow.svg" />
     </Wrap>
@@ -22,6 +28,7 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
 export default Section;
 
 const Wrap = styled.div`
+
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -36,13 +43,11 @@ const Wrap = styled.div`
 const ItemText = styled.div`
   padding-top: 15vh;
   text-align: center;
+  z-index:-1;
 `;
 
 const ButtonGroup = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
   margin-bottom: 30px;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -61,17 +66,18 @@ const LeftButton = styled.div`
   opacity: 0.85;
   text-transform: uppercase;
   font-size: 12px;
-  margin-right: 20px;
+  margin: 8px;
   cursor: pointer;
 `;
 
 const RightButton = styled(LeftButton)`
-  background-color: white;
+  background: white;
   color: black;
   opacity: 0.65;
 `;
 
 const DownArrow = styled.img`
+margin-top: 20px;
   height: 40px;
   overflow-x: hidden;
   animation: animateDown infinite 1.5s;
