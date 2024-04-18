@@ -1,3 +1,9 @@
+
+![Screenshot 2024-04-18 212006](https://github.com/aniigupta/tesla_clone/assets/114833203/718f2f20-b1bf-4214-b3e3-3501a306482d)
+
+![Screenshot 2024-04-18 211945](https://github.com/aniigupta/tesla_clone/assets/114833203/7a0426d2-7941-4059-b0d2-02eff5e91760)
+
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
